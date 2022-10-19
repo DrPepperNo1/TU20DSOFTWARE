@@ -221,16 +221,16 @@ class thread_readT(QThread):  #线程函数5在这里📌
         data_from_Heater = str(data_from_Heater, encoding="utf-8")
         return data_from_Heater
 if __name__ == '__main__':
-    '''
+    
     try:
         ser = serial.Serial('COM3', 9600, timeout=1)  # connecting to COM3
     except:
         print('Seems No Communication...')
-        print('① Please ensure your computer is connected to the Heater via RS-232')
-        print('② Start the software')
+        print('① Please ensure your computer is connected to the TU20D via RS-232')
+        print('② Then start the software')
         sys.exit()
     del ser
-    '''
+    
     app = QApplication(sys.argv)
     mainwindow = MyWindow()
     mainwindow.show()
